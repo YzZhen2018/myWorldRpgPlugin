@@ -1,0 +1,65 @@
+team:
+  #最大人数
+  max_player: 10
+  #队伍内是否可以互相攻击
+  damage_in_team: true
+  #队伍击杀掉落物的保护时间
+  item_pick_time: 10s
+
+#职业配置
+Career:
+    #战士
+    archer:
+      skills:
+        - 'liehuo'
+        - ''
+      max_Level: 100
+      start_health: 20
+      perlevel_add_health: 5
+      start_damage: 10
+      perlevel_add_damage: 5
+
+#属性
+Attributes:
+  agile:
+    name: "敏捷"
+    add: "(<value>*5)^2/50"
+  power:
+    name: "力量"
+    add: "(<value>*5)^2/50"
+  magic:
+    name: "魔法"
+    add: "(<value>*5)^2/50"
+  health:
+    name: "体力"
+    add: "(<value>*5)^2/50"
+  endurance:
+    name: "耐力"
+    add: "(<value>*5)^2/50"
+
+#技能
+Skills:
+  liehuo:
+    skill_name: "烈火"
+    #技能最高等级
+    max_level: 10
+    #技能初始伤害
+    start_damage: 10
+    #每级增加伤害
+    perlevel_add_damage: 5
+    #玩家学习等级
+    player_study_level: 35
+    #玩家属性加成#物理攻击加成
+    player_att_add: "<physical_damage>*10"
+  雷电:
+    skill_name: "雷电"
+    #技能最高等级
+    max_level: 10
+    #技能初始伤害
+    start_damage: 10
+    #每级增加伤害
+    perlevel_add_damage: 5
+    #玩家学习等级
+    player_study_level: 35
+    #玩家属性加成#物理攻击加成
+    player_att_add: "<magic_damage>*10"

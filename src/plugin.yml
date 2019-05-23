@@ -1,0 +1,8 @@
+name: pp
+main: Main.PP
+version: 1.0
+commands:
+  t:
+    usage: /<command>
+    description: The main command for this plugin
+    aliases: [dz]
